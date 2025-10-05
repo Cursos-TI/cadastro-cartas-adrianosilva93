@@ -1,0 +1,33 @@
+int main() {
+    char nome_estado[50] = "Pernambuco";
+    char codigo_carta[10] = "A01";
+    char nome_cidade[50] = "Recife";
+    int populacao = 1661017;
+    float area = 218.43f;
+    double pib = 699280000000.00;
+    int pontos_turisticos = 50;
+
+    printf("Digite o nome do estado (sem espaços):\n");
+    scanf("%s", nome_estado);
+    printf("Digite o Código da Carta (ex: A01):\n");
+    scanf("%s", codigo_carta);
+    printf("Digite o nome da cidade (sem espaços):\n");
+    scanf("%s", nome_cidade);
+    printf("Digite a população:\n");
+    scanf("%d", &populacao);
+    printf("Digite a área (em km²):\n");
+    scanf("%f", &area);
+    printf("Digite o PIB:\n");
+    scanf("%le", &pib);
+    printf("Digite a quantidade de pontos turísticos:\n");
+    scanf("%d", &pontos_turisticos);
+    printf("\n--- Dados da Carta ---\n");
+    printf("Nome do Estado: %s\n", nome_estado);
+    printf("Código da Carta: %s\n", codigo_carta);
+    printf("Nome da cidade: %s\n", nome_cidade);
+    printf("População: %d\n", populacao);
+    printf("Área: %.2f km²\n", area);
+    printf("PIB: %.2lf\n", pib);
+    printf("Quantidade de pontos turísticos: %d\n", pontos_turisticos);
+    return 0;
+}
